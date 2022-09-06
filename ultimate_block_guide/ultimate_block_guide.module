@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ *
+ * We use hook_theme to define the templates used.
+ */
+function ultimate_block_guide_theme($existing, $type, $theme, $path) {
+  return [
+    'basic_twig_block' => [
+      'variables' => [
+        'text' => '',
+      ],
+    ],
+    'css_block' => [
+      'variables' => [],
+    ],
+    'js_block' => [
+      'variables' => [],
+    ],
+    'context_block' => [
+      'variables' => [
+        'name' => NULL,
+      ],
+    ],
+  ];
+}
